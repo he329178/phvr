@@ -144,11 +144,10 @@
                         </goals>
                         <configuration>
                             <publisher>
-                                <contextUrl>http://jfrog.phvr.co.in/artifactory/phvr/phvr</contextUrl>
+                                <contextUrl>http://jfrog.phvr.co.in/phvr</contextUrl>
                                 <username>admin</username>
                                 <password>Admin@123</password>
-                                <repoKey>calculator</repoKey>
-                                <snapshotRepoKey>calculator</snapshotRepoKey>
+				 <repoKey>phvr</repoKey>
                             </publisher>
                         </configuration>
                     </execution>
@@ -160,7 +159,7 @@
 		<repository>
 			<id>artifactory</id>
 			<name>Calc_Dev_Snapshot</name>
-			<url>https://jfrog.phvr.co.in/artifactory/Calc_Dev_Snapshot</url>
+			<url>https://jfrog.phvr.co.in/phvr</url>
 		</repository>
 	</distributionManagement>
 </project>
