@@ -155,11 +155,4 @@
             </plugin>
 		</plugins>
 	</build>
-	<distributionManagement>
-		<repository>
-			<id>artifactory</id>
-			<name>Calc_Dev_Snapshot</name>
-			<url>https://jfrog.phvr.co.in</url>
-		</repository>
-	</distributionManagement>
 </project>
