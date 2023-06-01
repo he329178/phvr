@@ -17,6 +17,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
+    <sonar.language>java</sonar.language>
+    <sonar.host.url>http://sonar.phvr.co.in</sonar.host.url>
+    <sonar.projectKey>phvr</sonar.projectKey>
   </properties>
 
   <dependencies>
@@ -153,4 +156,11 @@
             </plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>artifactory</id>
+			<name>Calc_Dev_Snapshot</name>
+			<url>https://jfrog.phvr.co.in/artifactory/Calc_Dev_Snapshot</url>
+		</repository>
+	</distributionManagement>
 </project>
