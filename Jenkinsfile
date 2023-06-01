@@ -28,11 +28,11 @@ pipeline {
                 sh 'mvn package -DskipTests=true'
             }
         }
-        stage('Archive Results') {
-            steps {
-                archiveArtifacts 'webapp/target/*.war'
-            }
-        }
+//        stage('Archive Results') {
+//            steps {
+//                archiveArtifacts 'webapp/target/*.war'
+//            }
+//        }
         stage('Deploy Application') {
             steps {
                 sh 'echo Deployment done'
