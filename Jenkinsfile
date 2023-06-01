@@ -7,7 +7,12 @@ pipeline {
                 sh 'mvn --version'    
             }
         }
-                stage('RunTest Cases') {
+        stage('Check Out') {
+            steps {
+                checkout scmGit(branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/he329178/phvr.git']])
+            }
+        }
+        stage('RunTest Cases') {
             steps {
                 sh 'mvn clean test'
             }
