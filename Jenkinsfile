@@ -1,4 +1,4 @@
-@Library('global-shared-library') _
+@Library('phvr') _
 pipeline {
     agent any
 
