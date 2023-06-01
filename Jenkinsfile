@@ -1,10 +1,14 @@
+@Library(global-shared-library) _
 pipeline {
     agent any
 
     stages {
          stage('Check Out') {
             steps {
-                checkout scmGit(branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/he329178/phvr.git']])
+                checkOut(
+                    branch: "main",
+                    url: "https://github.com/he329178/phvr.git"
+                )
             }
         }
         stage('Maven Version') {
