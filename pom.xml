@@ -144,7 +144,7 @@
                         </goals>
                         <configuration>
                             <publisher>
-                                <contextUrl>http://jfrog.phvr.co.in/artifactory</contextUrl>
+                                <contextUrl>http://jfrog.phvr.co.in/artifactory/phvr/phvr</contextUrl>
                                 <username>admin</username>
                                 <password>Admin@123</password>
                                 <repoKey>calculator</repoKey>
