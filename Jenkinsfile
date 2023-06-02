@@ -23,8 +23,7 @@ pipeline {
         }
         stage('Publich Test Reports') {
             steps {
-                sh 'ls **/target/surefire-reports/'
-                jacoco()
+                publishReports()
             }
         }
         stage('Build Code') {
