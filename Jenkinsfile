@@ -18,7 +18,7 @@ pipeline {
         }
         stage('RunTest Cases') {
             steps {
-                sh 'mvn clean test'
+                runTests()
             }
         }
         stage('Publich Test Reports') {
