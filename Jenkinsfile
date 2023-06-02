@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Maven Version') {
             steps {
-                sh 'mvn --version'    
+                mavenVersion()    
             }
         }
         stage('RunTest Cases') {
