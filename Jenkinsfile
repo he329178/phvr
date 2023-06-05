@@ -37,6 +37,7 @@ pipeline {
 //                archiveArtifacts 'webapp/target/*.war'
 //            }
 //        }
+//
         stage('Deploy Application') {
             steps {
                 sh 'echo Deployment done'
